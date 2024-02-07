@@ -1,0 +1,16 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Jeopardy menu colors */
+    --menu-game: #e6ae5b;
+    --menu-foreground: #1a1a1a;
+    /* Jeopardy board colors */
+    --board-background: #000000;
+    --category-bg: #071277;
+    --category-text: #f3f4f7;
+    --clue-bg: #051371;
+    --clue-text: #d69f4c;
+    --clue-text-shadow: #0a0a0a;
+}

@@ -6,6 +6,8 @@ import * as socketio from "socket.io";
 import { fileURLToPath } from "url";
 
 import indexRoute from "./routes/index.js";
+import menuRoute from "./routes/menu.js";
+// import gameRoute from "./routes/game.js";
 
 const app = express();
 const server = http.createServer( app );
@@ -21,8 +23,10 @@ app.use( express.json() );
 app.use( express.urlencoded( { extended: true } ) );
 app.use( express.static( path.join( __dirname, 'public' ) ) );
 
-app.get( '/', indexRoute );
-app.get( "*", indexRoute );
+app.use( '/', indexRoute );
+app.use( '/menu', menuRoute );
+
+app.use( "*", indexRoute );
 
 // io.sockets.on( "connection", socket( io ) );
 

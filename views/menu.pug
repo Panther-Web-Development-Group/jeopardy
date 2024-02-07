@@ -1,0 +1,11 @@
+extends default
+
+block content
+    main.game-select#game-select
+        header.game-select-header#game-select-header 
+            h1.game-select-title#game-select-title Select your game
+        ul.game-select-list#game-select-list 
+            each game in games 
+                li.game
+                    a(href=`/game/${game.id}`)= game.name 
+                
