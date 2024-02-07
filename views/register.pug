@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+    h1 Register
+    form(action="/user/register" method="post")
+        div
+            label(for="username") Username:
+            input(type="text" id="username" name="username" required)
+        div
+            label(for="schoolemail") School Email:
+            input(type="email" id="schoolemail" name="schoolemail" required)
+        div
+            label(for="password") Password:
+            input(type="password" id="password" name="password" required)
+        div
+            input(type="submit" value="Register")
