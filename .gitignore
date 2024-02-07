@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 node_modules
+=======
+# Ignore the node_modules folder
+node_modules
+
+# Ignore the build and env files
+build/*
+env/*
+>>>>>>> 9e68bf8fde6c5a4e99d63e6cce93664e2e8904aa

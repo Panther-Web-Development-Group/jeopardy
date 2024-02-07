@@ -1,0 +1,21 @@
+extends default
+
+block content
+    main.board#board
+        .board-container#board-container
+            ul.categories#categories
+                each category in categories
+                    - const { name: categoryName, id: categoryId, clues } = category
+                    li.category(id=`category-${categoryId}` data-category=`${categoryName}`)
+                        header.category-header
+                            h3.category-title= categoryName 
+                        ul.clues 
+                            each clue in clues 
+                                - const { name: clueName, id: clueId } = clue;
+                                li.clue(id=`clue-${clueId}`)
+                                    a.clue-link(href=`?show-clue=${clueId}`)= clueName
+        .teams-container#teams-container 
+            ul.teams#teams 
+                each team in teams 
+                    - const { name: teamName, id: teamId, score: teamScore } = team;
+                    li.team-member(id=`team-member-${teamId}`)= teamName 
