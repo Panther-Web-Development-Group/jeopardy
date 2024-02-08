@@ -1,5 +1,4 @@
 import bluebird from 'bluebird';
-import bluebird from 'bluebird';
 import MongoStore from "connect-mongo";
 import 'dotenv/config';
 import express from "express";
@@ -12,7 +11,6 @@ import { Strategy as LocalStrategy } from "passport-local";
 import path from "path";
 import { Server as SocketIOServer } from "socket.io";
 import { fileURLToPath } from "url";
-
 import User from "./models/User.js";
 import indexRoute from "./routes/index.js";
 
@@ -52,8 +50,7 @@ passport.deserializeUser(User.deserializeUser());
 const server = http.createServer(app);
 const io = new SocketIOServer(server);
 
-const __dirname = fileURLToPath(path.dirname(
-    import.meta.url));
+const __dirname = fileURLToPath(path.dirname(import.meta.url));
 app.set('view engine', 'pug');
 app.set("views", path.join(__dirname, "/views"));
 app.use(logger('dev'));

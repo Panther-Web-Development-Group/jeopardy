@@ -29,7 +29,6 @@ router.post('/user/register', async(req, res) => {
 });
 
 router.get('/login', (req, res) => {
-    req.flash
     res.render('login', { errorMessages: req.flash('error') });
 });
 
