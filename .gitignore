@@ -1,6 +1,10 @@
 # Ignore the node_modules folder
 node_modules
 
+# Ignore the test files
+test/*
+
 # Ignore the build and env files
 build/*
 env/*
+.env

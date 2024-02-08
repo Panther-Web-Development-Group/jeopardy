@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Gyparody";
+    src: 
+        local("Gyparody"),
+        url("/assets/fonts/gyparody.ttf");
+}
+
+@font-face {
+    font-family: "Korinna Agency";
+    src: 
+        local("Korinna Agency"),
+        url("/assets/fonts/OPTIKorinna-Agency.ttf"),
+        url("/assets/fonts/OPTIKorinna-Agency.otf");
+}
+
+@font-face {
+    font-family: "Korinna Agency Extra Bold";
+    src: 
+        local("Korinna Agency Extra Bold"),
+        url("/assets/fonts/OPTIKorinnaExtraBoldAgency.ttf"),
+        url("/assets/fonts/OPTIKorinnaExtraBoldAgency.otf");
+}
+
+@font-face {
+    font-family: "Swiss 911 Compressed";
+    src:
+        local("Swiss 911 Compressed"), 
+        url("/assets/fonts/Swiss 911 Compressed Regular.ttf"),
+        url("/assets/fonts/Swiss 911 Compressed Regular.otf");
+}

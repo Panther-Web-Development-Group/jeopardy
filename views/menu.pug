@@ -5,7 +5,8 @@ block content
         header.game-select-header#game-select-header 
             h1.game-select-title#game-select-title Select your game
         ul.game-select-list#game-select-list 
-            each game in games 
+            each game in games
+                - const { id, name } = game
                 li.game
-                    a(href=`/game/${game.id}`)= game.name 
+                    a(href=`/game/${id}`)= name 
                 
