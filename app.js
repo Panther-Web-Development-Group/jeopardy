@@ -18,7 +18,7 @@ import indexRoute from "./routes/index.js";
 const app = express();
 
 // MongoDB connection
-mongoose.connect(process.env.URI)
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err));
 
